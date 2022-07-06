@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^3.6.11",
     "next": "12.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "use-stripe-subscription": "^1.0.6"
   },
   "devDependencies": {
     "eslint": "8.19.0",
