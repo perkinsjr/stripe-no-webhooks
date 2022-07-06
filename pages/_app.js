@@ -5,9 +5,11 @@ import {
   RedirectToSignIn
 } from '@clerk/nextjs';
 import { SubscriptionProvider } from 'use-stripe-subscription';
+import { ChakraProvider } from '@chakra-ui/react'
 
 function MyApp({ Component, pageProps }) {
   return (
+    <ChakraProvider resetCSS>
     <SubscriptionProvider
       stripePublishableKey={process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
     >
@@ -20,6 +22,7 @@ function MyApp({ Component, pageProps }) {
         </SignedOut>
       </ClerkProvider>
     </SubscriptionProvider>
+    </ChakraProvider>
   );
 }
 
