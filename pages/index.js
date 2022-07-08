@@ -64,7 +64,7 @@ export default function Home() {
           <SimpleGrid
             columns={{
               base: 1,
-              md: 3,
+              md: 2,
             }}
           >
             {products.map((product) => {

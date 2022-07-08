@@ -73,7 +73,6 @@ import {
           </Button>
           </Gate>
         </Stack>
-       
       </Box>
     )
   }
